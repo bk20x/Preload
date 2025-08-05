@@ -54,9 +54,8 @@ macro initData() =
       let `table` = jsonToTable(`fileData`, `accessor`)
       proc `queryProc`(elementName : cstring): cstring {.cdecl, exportc, dynlib.} = #Exported for so, dll
         return cstring($(`table`[$(elementName)]))
-initData()
-echo queryItem("health potion")
 
+initData()
 proc NimMain() {.cdecl, importc.}
 proc libraryInit() {.exportc, dynlib, cdecl.} =
   NimMain()
