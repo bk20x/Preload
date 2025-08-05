@@ -1,0 +1,41 @@
+[
+  {"name": "green_slime",
+    "health": 50,
+    "damage": 5,
+    "speed": 55,
+    "rarity": "COMMON"
+  },
+  {"name": "blue_slime",
+    "health": 50,
+    "damage": 10,
+    "speed": 55,
+    "rarity": "COMMON"
+  },
+  {"name": "orange_slime",
+    "health": 75,
+    "damage": 20,
+    "speed":  55,
+    "rarity": "COMMON"
+  },
+  {"name": "purple_slime",
+    "health": 80,
+    "damage": 30,
+    "speed": 65,
+    "rarity": "UNCOMMON"
+  },
+  {"name": "skeleton",
+    "health": 80,
+    "damage": 25,
+    "rarity": "COMMON"
+  },
+  {"name": "will-o-wisp",
+    "health": 60,
+    "damage": 15,
+    "rarity": "UNCOMMON"
+  },
+  {"name":  "forest_demon",
+    "health": 160,
+    "damage": 40,
+    "rarity": "RARE"
+  }
+]

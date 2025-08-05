@@ -1,0 +1,2 @@
+Item, name, items.json
+Mob, name, mobs.json
