@@ -60,5 +60,4 @@ proc NimMain() {.cdecl, importc.}
 proc libraryInit() {.exportc, dynlib, cdecl.} =
   NimMain()
 ````
-#### If `types.txt` contained `Item, name, items.json` and an item looked like {"name":"potion"...}
-#### the macro will generate a procedure `queryItem` and you would retrieve the json object by name `echo queryItem("potion")`
+#### If `types.txt` contained `Item, name, items.json` and an item looked like {"name":"potion"...}: the macro will generate a procedure `queryItem` and you would retrieve the json object by name `echo queryItem("potion")`
