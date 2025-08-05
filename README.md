@@ -1,6 +1,6 @@
 # Preload
 ### Procedure and Macro to parse Json into tables and generate query functions for them at compile time. 
-####  Tested in my game with JNA and multiple types
+####  Tested in my game with JNI and multiple types
 
 
 
