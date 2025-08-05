@@ -48,8 +48,6 @@ macro initData() =
 
 
 initData()
-echo queryItem("health potion")
-
 proc NimMain() {.cdecl, importc.}
 proc libraryInit() {.exportc, dynlib, cdecl.} =
   NimMain()
