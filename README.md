@@ -1,4 +1,14 @@
-## Parse JSON arrays into key-value tables based on a defined scheme and generate accessor procs for them at compile time. 
+## Parse JSON arrays into key-value tables based on a defined schema and generate accessor procs for them at compile time.
+
+## Define a schema by creating a types.txt, and for each JSON file you would write *Name*, *Accessor*, *File* \n
+
+# *Name* generates proc `get*Name*`(key: cstring): cstring
+
+# *Accessor* being the named field of the object you wish to store by its value
+
+# *File* being the filepath relative to the cwd of the nim compiler
+
+
 
 
 #### Compile with `--app:lib --passL:-static`
