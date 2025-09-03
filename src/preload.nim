@@ -8,7 +8,7 @@ type
 var registeredTypes {.compileTime.}: seq[CustomType] 
 
 
-func newCustomType(name, accessor, filePath : string): --> CustomType =
+func newCustomType(name, accessor, filePath : string): -> CustomType =
   CustomType(name : name, accessor : accessor, filePath : filePath)
 
 proc jsonToTable(jsonData, accessor : string): Table[string,JsonNode] =
