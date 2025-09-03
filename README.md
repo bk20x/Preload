@@ -2,7 +2,7 @@
 
 ### Define a schema by creating a types.txt, and for each JSON file you would write *Name*, *Accessor*, *File* \n
 
-#### *Name* generates proc `get*Name*`(key: cstring): cstring
+#### *Name* generates proc `get`*Name*``(key: cstring): cstring
 
 #### *Accessor* being the named field of the object you wish to store by its value
 
