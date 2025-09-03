@@ -3,7 +3,7 @@ import macros
 
 
 
-macro `-->`*(t: typedesc): typedesc = t.getType() 
+macro `->`*(t: typedesc): typedesc = t.getType() 
 
 
 
