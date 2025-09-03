@@ -1,17 +1,17 @@
 ## Parse JSON arrays into key-value tables based on a defined schema and generate accessor procs for them at compile time.
 
-## Define a schema by creating a types.txt, and for each JSON file you would write *Name*, *Accessor*, *File* \n
+### Define a schema by creating a types.txt, and for each JSON file you would write *Name*, *Accessor*, *File* \n
 
-# *Name* generates proc `get*Name*`(key: cstring): cstring
+#### *Name* generates proc `get*Name*`(key: cstring): cstring
 
-# *Accessor* being the named field of the object you wish to store by its value
+#### *Accessor* being the named field of the object you wish to store by its value
 
-# *File* being the filepath relative to the cwd of the nim compiler
-
-
+#### *File* being the filepath relative to the cwd of the nim compiler
 
 
-#### Compile with `--app:lib --passL:-static`
+
+
+### Compile with `--app:lib --passL:-static`
 ````
 import tables, json, more_sugar, strutils, macros
 
@@ -66,4 +66,5 @@ proc NimMain() {.cdecl, importc.}
 proc libraryInit() {.exportc, dynlib, cdecl.} =
   NimMain()
 ````
-#### If `types.txt` contained `Item, name, items.json` and an item looked like {"name":"potion"...}: the macro will generate a procedure `queryItem` and you would retrieve the json object by name `echo queryItem("potion")`
+
+#### If `types.txt` contained `Item, name, items.json` and an item looked like {"name":"potion", "rarity":"COMMON"}: the macro will generate a procedure `queryItem` and you would retrieve the json object by "name" on the object 
