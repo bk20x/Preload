@@ -1,4 +1,4 @@
-## Proc and Macro to parse Json into tables and generate query functions for them at compile time. 
+## Parse JSON arrays into key-value tables based on a defined scheme and generate accessor procs for them at compile time. 
 
 
 #### Compile with `--app:lib --passL:-static`
