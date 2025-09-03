@@ -1,5 +1,4 @@
-# Preload
-### Procedure and Macro to parse Json into tables and generate query functions for them at compile time. 
+## Proc and Macro to parse Json into tables and generate query functions for them at compile time. 
 
 
 #### Compile with `--app:lib --passL:-static`
