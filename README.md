@@ -1,8 +1,5 @@
 # Preload
 ### Procedure and Macro to parse Json into tables and generate query functions for them at compile time. 
-####  Tested in my game with JNI and multiple types, i just made this because i dont like the idea of reading a file and looping over an array every time i need to get something by name, but i like the ability to load things dynamically.
-
-
 
 
 #### Compile with `--app:lib --passL:-static`
